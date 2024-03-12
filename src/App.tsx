@@ -5,7 +5,7 @@ import './global.scss';
 interface Param {
     id: number;
     name: string;
-    type: 'string';
+    type: 'string' | 'number' | 'list';
 }
 
 interface ParamValue {
@@ -50,6 +50,10 @@ class ParamEditor extends Component<Props, State> {
             editedModel: props.model,
         };
     }
+
+    getModel = () => {
+        return this.state.editedModel;
+    };
 
     handleInputChange = (paramId: number, value: string) => {
         const { editedModel } = this.state;
