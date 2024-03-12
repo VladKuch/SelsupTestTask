@@ -1,0 +1,53 @@
+@import './vars';
+* {
+  box-sizing: border-box;
+  outline: none!important;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: $fontColor;
+  text-decoration: none!important;
+}
+a:hover {
+  color: $fontColor;
+}
+body {
+  margin: 0;
+  font-family: $font;
+  font-size: $fontSizeM;
+  color: $fontColor;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1 {
+  font-size: 2.8em;
+}
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2.3em;
+}
+
+h4 {
+  font-size: 2.1em;
+}
+
+h5 {
+  font-size: 1.8em;
+}
+
+h6 {
+  font-size: 1.5em;
+}
+
+.app {
+  position: relative;
+}

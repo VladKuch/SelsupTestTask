@@ -1,0 +1,79 @@
+@import 'app/styles/vars';
+.Button {
+    cursor: pointer;
+    color: $fontColor;
+    padding: 6px 15px;
+    border-radius: 4px;
+    border: 1px solid $fontColor;
+}
+
+.clear {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.outline {
+    border: 1px solid $fontColor;
+    color: $fontColor;
+    background: none;
+}
+
+.success {
+    background: $successColor;
+    color: $invertedColor;
+}
+.success:hover {
+    background: $successHoverColor;
+}
+.success:disabled {
+    background: $successColor;
+}
+.primary {
+    background: $primaryColor;
+    color: $invertedColor;
+}
+
+.primary:hover {
+    background: $primaryHoverColor;
+}
+.primary:disabled {
+    background: $primaryColor;
+}
+
+.square {
+    padding: 0;
+}
+
+.square.size_m {
+    width: var(--font-line-m);
+    height: var(--font-line-m);
+}
+
+.square.size_l {
+    width: var(--font-line-l);
+    height: var(--font-line-l);
+}
+
+.square.size_xl {
+    width: var(--font-line-xl);
+    height: var(--font-line-xl);
+}
+
+.size_m {
+    font: var(--font-m);
+}
+
+.size_l {
+    font: var(--font-l);
+}
+
+.size_xl {
+    font: var(--font-xl);
+}
+
+
+.disabled {
+    opacity: 0.5;
+}
